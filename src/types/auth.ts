@@ -1,0 +1,1 @@
+export type TInputType = 'email' | 'password' | 'text' | 'tel'
