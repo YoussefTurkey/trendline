@@ -40,3 +40,60 @@ export const productAction: IHeaderAction[] = [
     icon: "/icons/wishlist2.svg",
   },
 ];
+
+export interface ITProductSelect {
+  id: string;
+  name: string;
+}
+export const productType: ITProductSelect[] = [
+  {
+    id: crypto.randomUUID(),
+    name: "Cotton",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Linen",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Wool",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Silk",
+  },
+];
+export const productSize: ITProductSelect[] = [
+  {
+    id: crypto.randomUUID(),
+    name: "2xl",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "xl",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "lg",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "md",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "sm",
+  },
+];
+
+export interface IColors {
+  name: string;
+  value: string;
+}
+export const colors: IColors[] = [
+  { name: "Red", value: "#E10600" },
+  { name: "Sky", value: "#C9D9E6" },
+  { name: "Brown", value: "#A18D5B" },
+  { name: "Blue", value: "#6F97CE" },
+  { name: "Gray", value: "#5A5A5A" },
+];
