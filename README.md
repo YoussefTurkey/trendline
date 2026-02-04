@@ -1,36 +1,170 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trendline – Frontend Task (Next.js)
 
-## Getting Started
+A frontend implementation for an authentication flow and UI task using **Next.js**, built as part of a technical assignment.
 
-First, run the development server:
+The project includes:
+
+- Full authentication flow (Register, Login, Verify)
+- Protected routes
+- Pixel-perfect & responsive UI implementation
+- API integration
+- Performance & SEO optimization
+
+---
+
+## 🚀 Live Demo
+
+🔗 **Live Demo:**  
+(ضع رابط Vercel هنا)  
+`https://trendline-six.vercel.app/`
+
+🔗 **Repository:**  
+https://github.com/YoussefTurkey/trendline
+
+---
+
+## 🧩 Features
+
+### 🔐 Authentication Flow
+
+- **Register Page**
+  - Full Name
+  - Email
+  - Password
+  - Phone Number
+  - Country Code
+- **Login Page**
+  - Email
+  - Password
+- **Verify Account Page**
+  - Verification code input
+  - ✅ Test verification code: `123456`
+- **Dashboard**
+  - Protected route
+  - Displays: `Welcome, [User Name]`
+
+### 🛡️ Protected Routes
+
+- Implemented using **NextAuth**
+- Middleware-based route protection
+- Unauthorized users are redirected to Login
+
+---
+
+## 🎨 User Interface
+
+- Pixel-perfect implementation based on the provided UI mockup
+- Fully responsive (Desktop & Mobile)
+- Built with:
+  - Tailwind CSS
+  - shadcn/ui
+  - Lucide Icons
+  - Embla Carousel
+
+---
+
+## ⚡ Performance & SEO
+
+- Lighthouse scores:
+  - **Performance:** 90+
+  - **SEO:** 90+
+- Optimized images & components
+- Proper metadata handling
+
+---
+
+## 🧰 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Authentication:** NextAuth
+- **Forms:** React Hook Form + Zod + Resolver
+- **HTTP Client:** Axios
+- **UI & Styling:**
+  - Tailwind CSS
+  - shadcn/ui
+  - Lucide React
+  - Embla Carousel
+- **Notifications:** react-hot-toast
+
+---
+
+## 🔗 API Integration
+
+- APIs were integrated according to the provided Postman Collection:
+  - Register
+  - Login
+  - Verify Account
+- Token is securely handled and stored after successful authentication.
+- Auth flow fully matches backend requirements.
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1️⃣ Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/YoussefTurkey/trendline.git
+cd trendline
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📂 Project Structure (Simplified)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+TRENDLINE/
+├── .next/                    # ملفات بناء Next.js التلقائية
+├── node_modules/             # حزم التبعيات المثبتة
+├── public/                   # ملفات ثابتة (صور، أيقونات، fonts)
+├── src/
+│   ├── app/                  # هيكل تطبيق Next.js 14 (App Router)
+│   │   ├── (auth)/           # مجموعة routes للمصادقة (Route Groups)
+│   │   ├── (pages)/          # مجموعة routes للصفحات
+│   │   ├── api/              # API Routes
+│   │   ├── dashboard/        # صفحة/مجموعة Dashboard
+│   │   ├── favicon.ico       # أيقونة الموقع
+│   │   ├── globals.css       # الأنماط العامة
+│   │   ├── layout.tsx        # Layout الرئيسي
+│   │   ├── page.tsx          # الصفحة الرئيسية (Home)
+│   ├── components/       # مكونات خاصة بالتطبيق
+│   ├── data/             # ملفات البيانات والـ mock data
+│   ├── lib/              # مكتبات وأدوات مساعدة
+│   ├── providers/        # Providers السياق (React Context)
+│   └── types/            # تعريفات TypeScript
+├── .env.local                # متغيرات البيئة المحلية
+├── .gitignore                # ملفات/مجلدات مستثناة من Git
+├── components.json           # إعدادات لـ shadcn/ui إن وجد
+├── eslint.config.mjs         # إعدادات ESLint
+├── middleware.ts             # Middleware لـ Next.js
+├── next-env.d.ts            # تعريفات TypeScript لـ Next.js
+└── next.config.ts           # إعدادات Next.js
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✅ Task Requirements Checklist
 
-## Learn More
+- Register Page with API integration
+- Login Page with API integration
+- Verify Account Page (Code: 123456)
+- Token handling & protected routes
+- Pixel-perfect UI implementation
+- Fully responsive design
+- GitHub repository
+- Live deployment
+- README with setup instruction
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Desktop Rate
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Desktop Rate](./public/googleSpeed/desktop.png)
 
-## Deploy on Vercel
+### Mobile Rate
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Mobile Rate](./public/googleSpeed/mobile.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👨‍💻 Author
+
+Youssef Turkey
+Frontend Engineer (Next.js)
+GitHub: https://github.com/YoussefTurkey
+([LinkedIn](https://www.linkedin.com/in/youturkey11/))
