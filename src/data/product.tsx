@@ -1,3 +1,5 @@
+import { IHeaderAction } from "./headerData";
+
 export interface IProductSlides {
   id: string;
   alt: string;
@@ -23,5 +25,18 @@ export const productSlides: IProductSlides[] = [
     id: crypto.randomUUID(),
     alt: "product-04",
     img: "/images/410555708_236d2355-ef94-45ae-b51b-8d4cfb1cdbf5-removebg-preview 1.webp",
+  },
+];
+
+export const productAction: IHeaderAction[] = [
+  {
+    id: crypto.randomUUID(),
+    alt: "cart",
+    icon: "/icons/addCart.svg",
+  },
+  {
+    id: crypto.randomUUID(),
+    alt: "wishlist",
+    icon: "/icons/wishlist2.svg",
   },
 ];

@@ -13,7 +13,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import { productSlides } from "@/data/productCarousel";
+import { productSlides } from "@/data/product";
 
 export const title = "Carousel with Thumbnails";
 
@@ -40,6 +40,7 @@ const ProductCarousel = () => {
           {productSlides.map((slide) => (
             <CarouselItem key={slide.id}>
               <div className="relative flex aspect-square items-center justify-center rounded-2xl bg-[#F5F5F5] p-6">
+                <div className="absolute inset-0 bg-linear-to-b from-black/20 to-transparent rounded-xl" />
                 <Image
                   src={slide.img}
                   width={600}
