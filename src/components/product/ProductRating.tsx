@@ -3,6 +3,7 @@ import RatingSummary from "../common/RatingSummary";
 import { Button } from "../ui/button";
 import { Star } from "lucide-react";
 import { comment } from "@/data/product";
+import SimilarItemsCarousel from "../common/SimilarItemsCarousel";
 
 const ProductRating = () => {
   return (
@@ -56,6 +57,10 @@ const ProductRating = () => {
         <Button className="bg-[#F5F5F5] text-[#BE968E] hover:text-white py-6 px-10 w-full md:w-fit">
           View More Comments
         </Button>
+      </div>
+
+      <div className="my-10">
+        <SimilarItemsCarousel />
       </div>
     </div>
   );

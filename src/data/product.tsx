@@ -142,3 +142,56 @@ export const comment: IComment[] = [
     createdAt: "4 months ago",
   },
 ];
+
+export interface IProductItemImg {
+  id: string;
+  img: string;
+  alt: string;
+  offer?: string;
+}
+export const productItemImg: IProductItemImg[] = [
+  {
+    id: crypto.randomUUID(),
+    img: "/images/61GoUmCw1PL._AC_SX679_-removebg-preview.webp",
+    alt: "product-01",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/images/61K-51VwsL._AC_SX679_-removebg-preview.webp",
+    alt: "product-02",
+    offer: "25% OFF",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/images/61rjMSPiDvL._AC_SY879_-removebg-preview.webp",
+    alt: "product-03",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/images/81jorIOyDhL._AC_SX679_-removebg-preview.webp",
+    alt: "product-04",
+    offer: "25% OFF",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/images/61GoUmCw1PL._AC_SX679_-removebg-preview.webp",
+    alt: "product-01",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/images/61K-51VwsL._AC_SX679_-removebg-preview.webp",
+    alt: "product-02",
+    offer: "25% OFF",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/images/61rjMSPiDvL._AC_SY879_-removebg-preview.webp",
+    alt: "product-03",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/images/81jorIOyDhL._AC_SX679_-removebg-preview.webp",
+    alt: "product-04",
+    offer: "25% OFF",
+  },
+];
