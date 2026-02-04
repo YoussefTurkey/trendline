@@ -5,6 +5,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 import { useState } from "react";
+import { DropdownMenuBasic } from "../common/dropMenu";
+import { DropdownMenuAvatar } from "../common/Avatar";
+import { SheetDemo } from "../common/MenuSheet";
 
 export interface IHeaderList {
   id: string;
@@ -76,13 +79,6 @@ export const headerAction: IHeaderAction[] = [
 
 const HeaderContent = () => {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
-  const [lang, setLang] = useState<"EN" | "AR">("EN");
-
-  const toggleLang = (value: "EN" | "AR") => {
-    setLang(value);
-    setOpen(false);
-  };
 
   if (
     pathname === "/login" ||
@@ -92,8 +88,8 @@ const HeaderContent = () => {
   )
     return null;
   return (
-    <header className="container mx-auto py-5">
-      <section className="flex items-center justify-between">
+    <header className="p-5 shadow w-full">
+      <section className="container mx-auto flex items-center justify-between">
         {/* Left Section */}
         <div className="flex items-center gap-10">
           {/* logo */}
@@ -108,7 +104,7 @@ const HeaderContent = () => {
           </Link>
 
           {/* links */}
-          <ul className="flex item-center gap-10">
+          <ul className="hidden lg:flex item-center gap-5 xl:gap-10">
             {headerlist.length > 0 &&
               headerlist.map((link) => (
                 <li className="group" key={link.id}>
@@ -120,7 +116,7 @@ const HeaderContent = () => {
                       alt={link.alt}
                       loading={"lazy"}
                     />
-                    <span className="text-[#8A8A8A] group-hover:text-black capitalize">
+                    <span className="text-[#8A8A8A] group-hover:text-black capitalize text-xs xl:text-md">
                       {link.label}
                     </span>
                   </Link>
@@ -130,7 +126,7 @@ const HeaderContent = () => {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center gap-2">
+        <div className="hidden lg:flex items-center gap-2">
           {headerAction.length > 0 &&
             headerAction.map((icon) => (
               <Button variant={"ghost"} key={icon.id}>
@@ -143,7 +139,13 @@ const HeaderContent = () => {
                 />
               </Button>
             ))}
+
+          <DropdownMenuBasic />
+          <DropdownMenuAvatar />
         </div>
+
+        {/* Menu Icon */}
+        <SheetDemo />
       </section>
     </header>
   );
