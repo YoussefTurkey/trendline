@@ -129,4 +129,8 @@
   button {
     @apply cursor-pointer;
   }
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.08);
+    color: transparent;
+  }
 }
