@@ -12,10 +12,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Image from "next/image";
-import { headerAction, headerlist } from "../layout/Header";
 import Link from "next/link";
 import { DropdownMenuBasic } from "./dropMenu";
 import { DropdownMenuAvatar } from "./Avatar";
+import { headerAction, headerlist } from "@/data/headerData";
 
 export function SheetDemo() {
   return (
