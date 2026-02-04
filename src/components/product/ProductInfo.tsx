@@ -81,14 +81,14 @@ const ProductInfo = () => {
               <h4 className="text-lg font-semibold">Quantity</h4>
               <span className="text-[#8A8A8A]">($300.00 for Piece)</span>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center flex-col lg:flex-row gap-5 justify-between">
               <QuantitySelector />
-              <Button className="bg-[#BE968E] text-white py-6 px-10">
+              <Button className="bg-[#BE968E] text-white py-6 px-10 w-full lg:w-fit">
                 <span>Add To Cart</span>
                 <Image
                   src={"/icons/addCart2.svg"}
-                  width={15}
-                  height={15}
+                  width={20}
+                  height={20}
                   alt="shipping-cart"
                   loading={"lazy"}
                 />

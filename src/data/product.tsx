@@ -97,3 +97,48 @@ export const colors: IColors[] = [
   { name: "Blue", value: "#6F97CE" },
   { name: "Gray", value: "#5A5A5A" },
 ];
+
+export interface IRatings {
+  star: number;
+  percent: number;
+}
+export const ratings: IRatings[] = [
+  { star: 5, percent: 67 },
+  { star: 4, percent: 15 },
+  { star: 3, percent: 6 },
+  { star: 2, percent: 3 },
+  { star: 1, percent: 9 },
+];
+
+export interface IComment {
+  id: string;
+  name: string;
+  msg: string;
+  createdAt: string;
+}
+export const comment: IComment[] = [
+  {
+    id: crypto.randomUUID(),
+    name: "Alex Daewn",
+    msg: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed",
+    createdAt: "4 months ago",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Alex Daewn",
+    msg: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed",
+    createdAt: "4 months ago",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Alex Daewn",
+    msg: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed",
+    createdAt: "4 months ago",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Alex Daewn",
+    msg: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed",
+    createdAt: "4 months ago",
+  },
+];

@@ -9,7 +9,7 @@ export default function ColorPicker() {
     <div className="space-y-4">
       <h4 className="text-lg font-semibold">Colors</h4>
 
-      <div className="flex items-start gap-6">
+      <div className="flex items-start gap-2 lg:gap-6">
         {colors.map((color) => (
           <button
             key={color.name}

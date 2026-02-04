@@ -6,7 +6,7 @@ export default function QuantitySelector() {
   const [qty, setQty] = useState(1);
 
   return (
-    <div className="flex items-center gap-5">
+    <div className="flex items-center w-full gap-5">
       {/* Quantity box */}
       <div className="flex items-center rounded-lg bg-gray-100 p-2">
         <Button

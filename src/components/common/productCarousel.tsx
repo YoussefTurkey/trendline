@@ -34,7 +34,7 @@ const ProductCarousel = () => {
   };
 
   return (
-    <div className="mx-auto w-full max-w-md space-y-4">
+    <div className="mx-auto w-full max-w-xl space-y-4">
       <Carousel setApi={handleApiChange}>
         <CarouselContent>
           {productSlides.map((slide) => (
@@ -46,7 +46,7 @@ const ProductCarousel = () => {
                   width={600}
                   height={600}
                   alt={slide.alt}
-                  className="object-contain max-h-100"
+                  className="object-contain max-h-150"
                   priority
                 />
               </div>
